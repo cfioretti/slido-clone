@@ -8,7 +8,7 @@ The goal of the project is to recreate the core functionalities of creating new 
 Allow the user to create a new event.
 
 - Any event should have a unique ID
-
+- Add Darkmode ability
 
 ## Resources
 
