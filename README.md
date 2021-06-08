@@ -3,6 +3,13 @@
 Slido is a popular application used to manage Q&A sessione and Polls during live events.
 The goal of the project is to recreate the core functionalities of creating new sessions, collect and present questions.
 
+## General Requirements
+
+- Provide unit and functional tests using Jest (see [Resources](#resources) section)
+- Usage of React hooks
+- Usage of OOP (where needed)
+- Usage of Strapi as backend (see [Resources](#resources) section)
+
 ## Level 1
 
 An administrator role should have the ability to create a new event.
@@ -31,11 +38,13 @@ Any new joined user should update a realtime list of participants, only visible 
 For each one of the events, the administrator would see the list of questions, sorted by number of votes. 
 By clicking on a question, that one would be highlighted, with the ability to hide it from the list.
 
+
 ## Bonus Activities
 - Use Tailwind as UI Kit
 - Create a Components library using Storybook
 - Add Darkmode ability (using Sass or CSS Variables)
 
 ## Resources
+[Jest](https://jestjs.io/docs/getting-started)
 
 [Strapi](https://strapi.io/documentation/developer-docs/latest/getting-started/introduction.html)
