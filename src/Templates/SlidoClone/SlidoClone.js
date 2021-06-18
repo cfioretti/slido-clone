@@ -45,30 +45,32 @@ const SlidoClone = () => {
         },
     }));
 
+    const classes = useStyles();
+
     return (
-        <div className={useStyles?.root}>
+        <div className={classes.root}>
             <AppBar position="static">
                 <Toolbar>
-                    <IconButton edge="start" className={useStyles?.menuButton} color="inherit" aria-label="home">
+                    <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="home">
                         <HomeIcon/>
                     </IconButton>
-                    <Typography variant="h6" className={useStyles?.title}>Slido Clone</Typography>
-                    <IconButton edge="end" className={useStyles?.menuButton} color="inherit" aria-label="account">
+                    <Typography variant="h6" className={classes.title}>Slido Clone</Typography>
+                    <IconButton edge="end" className={classes.menuButton} color="inherit" aria-label="account">
                         <AccountCircleIcon/>
                     </IconButton>
                 </Toolbar>
             </AppBar>
-            <GridList cellHeight={160} className={useStyles?.gridList} cols={3}>
+            <GridList cellHeight={160} className={classes.gridList} cols={3}>
                 {data.map((tile) => (
-                    <Card className={useStyles?.root}>
+                    <Card className={classes.root}>
                         <CardContent>
-                            <Typography className={useStyles?.title} color="textSecondary" gutterBottom>
+                            <Typography className={classes.title} color="textSecondary" gutterBottom>
                                 Event {tile.uid}
                             </Typography>
                             <Typography variant="h5" component="h2">
                                 {tile.title}
                             </Typography>
-                            <Typography className={useStyles?.pos} color="textSecondary">
+                            <Typography className={classes.pos} color="textSecondary">
                                 {tile.description}
                             </Typography>
                             <Typography variant="body2" component="p">
