@@ -1,6 +1,7 @@
-import './App.css';
-import axios from 'axios';
 import React, {useEffect, useState} from 'react';
+import axios from './Components/Axios/Axios';
+import './App.css';
+
 import {makeStyles} from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
@@ -40,7 +41,8 @@ function App() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:1337/events').then(response => {
+    axios.get('/events').then(response => {
+      console.log(response)
       setData(response.data)
     });
   }, [])
