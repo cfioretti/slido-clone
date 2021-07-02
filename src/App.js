@@ -1,13 +1,14 @@
+import {BrowserRouter} from "react-router-dom";
 import React from 'react';
 import './App.css';
-import SlidoClone from './Templates/SlidoClone/SlidoClone';
+import Router from "./router/Router";
 
 function App() {
-  return (
-      <div className="App">
-        <SlidoClone/>
-      </div>
-  );
+    return (
+        <BrowserRouter>
+            <Router/>
+        </BrowserRouter>
+    );
 }
 
 export default App;
