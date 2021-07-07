@@ -3,8 +3,6 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import AuthService from "./services/Auth";
-import {history} from "./router/Router";
 
 ReactDOM.render(
     <React.StrictMode>

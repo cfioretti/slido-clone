@@ -1,6 +1,7 @@
 import React from 'react';
 import AuthService from '../services/Auth';
 import Input from '../components/commons/Input';
+import Label from '../components/commons/Label';
 
 const Login = props => {
   const handleFormSubmit = e => {
