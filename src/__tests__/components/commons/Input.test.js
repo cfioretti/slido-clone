@@ -2,14 +2,15 @@ import { screen, render } from '@testing-library/react';
 import Input from '../../../components/commons/Input';
 
 describe('Input component', () => {
-  it('renders', () => {
+
+  it('renders by type', () => {
     const { container } = render(<Input type='text' />);
     container.querySelector('input[type=text]');
     //screen.getByLabelText(/login/i)
   });
 
   it('renders by label', () => {
-    render(<Input type='text' aria-label='Username' />);
-    screen.getByLabelText('Username');
+    render(<Input type='text' label="Username" aria-label='Username' />);
+    screen.getByLabelText(/Username/i);
   });
 });

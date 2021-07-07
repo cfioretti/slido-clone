@@ -1,6 +1,10 @@
 import React from 'react';
+import Label from "./Label";
 
 const Input = props => {
-  return <input {...props} />;
+    return <>
+        <Label>{props?.label}</Label>
+        <input {...props}/>
+    </>
 };
-export default Input;
+export default Input
