@@ -1,4 +1,4 @@
-import axios from "../components/axios/Axios";
+import axios from "./Axios";
 
 const Get = ( url, defaultResponse) => {
     if (url) {

@@ -28,6 +28,15 @@
       "react-app/jest"
     ]
   },
+  "prettier": {
+    "arrowParens": "avoid",
+    "singleQuote": true,
+    "semi": true,
+    "printWidth": 120,
+    "jsxSingleQuote": true,
+    "trailingComma": "none",
+    "useTabs": false
+  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -41,6 +50,7 @@
     ]
   },
   "devDependencies": {
+    "prettier": "^2.3.2",
     "autoprefixer": "^9.8.6",
     "cypress": "^7.5.0",
     "postcss": "^7.0.36",
