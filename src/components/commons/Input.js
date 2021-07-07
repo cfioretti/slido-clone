@@ -3,7 +3,7 @@ import Label from "./Label";
 
 const Input = props => {
     return <>
-        <Label>{props?.label}</Label>
+        <Label htmlFor={props?.id}>{props?.label}</Label>
         <input {...props}/>
     </>
 };
