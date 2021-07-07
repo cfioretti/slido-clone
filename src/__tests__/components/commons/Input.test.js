@@ -10,7 +10,7 @@ describe('Input component', () => {
   });
 
   it('renders by label', () => {
-    render(<Input type='text' label="Username" aria-label='Username' />);
+    render(<Input type='text' label="Username" aria-label='username' />);
     screen.getByLabelText(/Username/i);
   });
 });
