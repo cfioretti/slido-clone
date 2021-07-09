@@ -1,10 +1,9 @@
 describe("Events API", () => {
     const getItems = () =>
-        cy.request('http://localhost:1337/events')
-            .its('body')
+        cy.request('http://localhost:1337/events').its('body');
 
     const getFirst = () =>
-        cy.request('http://localhost:1337/events/1')
+        cy.request('http://localhost:1337/events/1');
 
     it('returns JSON', () => {
         cy.request('http://localhost:1337/events')
@@ -14,18 +13,22 @@ describe("Events API", () => {
     })
 
     it('loads the initial items', () => {
-        getItems().should('have.length.greaterThan', 0)
-    })
-
-    it('returns valid objects', () => {
-        getItems().each(value =>
-                expect(value).to.have.all.keys('uid', 'title', 'description', 'start_at', 'end_at')
-            )
+        getItems().should('have.length.greaterThan', 0);
     })
 
     it('returns first object', () => {
-        getFirst(value =>
-            expect(value).to.have.all.keys('uid', 'title', 'description', 'start_at', 'end_at')
+        getFirst(value => {
+                console.log('first', value);
+                expect(value).to.have.all.keys('uid', 'title', 'description', 'start_at', 'end_at');
+            }
+        )
+    })
+
+    it('returns valid objects', () => {
+        getItems().each(value => {
+                console.log('first', value);
+                expect(value).to.have.all.keys('uid', 'title', 'description', 'start_at', 'end_at');
+            }
         )
     })
 });
